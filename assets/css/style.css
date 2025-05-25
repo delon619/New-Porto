@@ -1,0 +1,8 @@
+.image{
+    width: 200px;
+    height: 350px;
+    background-color: black;
+    background-image: url('../image/bratcafe.jpg.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+}

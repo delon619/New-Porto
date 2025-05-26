@@ -20,7 +20,7 @@
         nav {
             width: 100%;
             height: 80px;
-            background-color: rgb(119, 43, 119);
+            background-color: rgb(122, 82, 214);
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -38,7 +38,7 @@
             display: flex;
             width: 100%;
             height: 720px;
-            background-color: rgb(100, 46, 100);
+            background-color: rgb(111, 70, 189);
             display: flex;
             align-items: center;
             padding-left: 120px;
@@ -148,6 +148,104 @@
             padding: 60px 0;
             background-color: rgba(0, 0, 0, .5);
         }
+
+        .form{
+            width: 100%;
+            height: 780px;
+            background-color: rgb(111, 70, 189);
+            color: white;
+            padding-top: 40px;
+            justify-content: center;
+        }
+
+        .form h1{
+            width: 100%;
+            text-align: center;
+            font-size: 32px;
+        }
+
+        .form p{
+            text-align: center;
+            margin-bottom: 70px;
+        }
+
+        .isi-form1{
+            display: flex;
+            gap: 45px;
+            margin-left: 250px;
+        }
+
+        .form1,
+        .form2{
+            width: 500px;
+            height: 100px;
+        }
+
+
+
+        .namaform{
+            width: 500px;
+            height: 50px;
+            border-radius: 10px;
+            border: none;
+            padding-left: 20px;
+            margin-top: 10px;
+        }
+
+        .judul-form{
+            margin-left: 10px;
+        }
+
+        .isi-form2{
+            width: 1050px;
+            height: 270px;
+            margin-left: 250px;
+        }
+
+        .pesan{
+            width: 1050px;
+            height: 250px;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 10px;
+        }
+
+        .form button{
+            width: 1050px;
+            height: 50px;
+            margin-left: 250px;
+            margin-top: 20px;
+            border-radius: 10px;
+            font-size: 16px;
+            color: rgb(111, 70, 189);
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .form button:hover{
+            color: rgb(183, 106, 255);
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+            color: black;
+            font-weight: 600;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        .end{
+            width: 100%;
+            height: 50px;
+            margin-top: 90px;
+            background-color: rgb(122, 82, 214);
+            justify-content: center;
+            padding-top: 15px;
+            font-weight: 600;
+            font-size: 18px;
+        }
     </style>
 </head>
 
@@ -203,6 +301,32 @@
                     <img src="./assets/image/g6.jpg" alt="">
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section class="form">
+        <h1>Kontak</h1>
+        <p>Hubungi saya jika anda tertarik berkolaborasi dengan saya</p>
+        <div class="isi-form1">
+            <form class="form1">
+                <label class="judul-form" for="nama">Nama Lengkap</label><br>
+                <input class="namaform" type="text" id="nama" name="nama" placeholder="Ketikan Nama Anda">
+            </form>
+            <form class="form2">
+                <label class="judul-form" for="email">Alamat Email</label><br>
+                <input class="namaform" type="text" id="email" name="email" placeholder="Ketikan Email Anda">
+            </form>
+        </div>
+        <div class="isi-form2">
+            <form class="form3">
+                <label class="judul-form3" for="pesan">Pesan Singkat</label><br>
+                <textarea class="pesan" id="pesan" name="pesan" placeholder="Ketikan Pesan Anda"></textarea>
+            </form>
+        </div>
+        <br>
+        <button>Kirim Pesan</button>
+        <div class="end">
+            <p>Made with love ❤️ Delon</p>
         </div>
     </section>
 </body>

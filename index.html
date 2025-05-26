@@ -32,7 +32,20 @@
         .menu {
             display: flex;
             gap: 24px;
+        }
+
+        .beranda,
+        .portofolio,
+        .kontak{
+            transition: .3s;
+        }
+
+        .beranda:hover,
+        .portofolio:hover,
+        .kontak:hover{
             cursor: pointer;
+            color: rgb(209, 171, 244);
+            transition: .3s;
         }
 
         .hero {
@@ -49,7 +62,7 @@
         .hero .content {
             width: 50%;
             height: 500px;
-            
+            margin-bottom: 60px;
         }
 
         .hero .content:nth-child(1) {
@@ -94,6 +107,15 @@
             padding: 8px 16px;
             margin-top: 16px;
             font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: .3s;
+        }
+
+        .hero button:hover{
+            transform: scale(1.1);
+            color: rgb(159, 57, 255);
+            transition: .3s;
         }
 
         .porto {
@@ -255,9 +277,9 @@
         <h2>Delon Nicholas</h2>
 
         <div class="menu">
-            <div>Beranda</div>
-            <div>Portofolio</div>
-            <div>Kontak</div>
+            <div class="beranda">Beranda</div>
+            <div class="portofolio">Portofolio</div>
+            <div class="kontak">Kontak</div>
         </div>
     </nav>
 
@@ -266,11 +288,7 @@
             <div>
                 <p class="welcome">Haloo semuaa, saya adalah</p>
                 <h2 class="name">Delon Nicholas Hermawan</h2>
-                <p class="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio reprehenderit tempora
-                    quaerat, fuga nisi commodi optio dolorum iste voluptas doloribus iusto voluptates explicabo aliquid,
-                    earum, eligendi officia a eaque adipisci perspiciatis laboriosam perferendis? Illo ullam quisquam
-                    ipsam esse eligendi vitae aspernatur adipisci, dolor praesentium facilis veritatis hic sit doloribus
-                    consectetur.</p>
+                <p class="desc">Saya adalah seorang Web Developer Pemula yang sedang mempelajari dasar-dasar pengembangan web dengan semangat tinggi. Saya sudah familiar dengan HTML, CSS, dan JavaScript serta mulai memahami konsep seperti responsive design, DOM manipulation, dan dasar algoritma.</p>
                 <button>Let's Connect</button>
             </div>
         </div>
